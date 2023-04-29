@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../static/style.css">      
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="../static/phone.css">
+</head>
+{% block home %}
+
+    <section id="timepass">
+        <!-- {% comment %} {% for program in programs %}
+        <h2>{{forloop.}}{{program}}</h2>
+        {% endfor %}
+
+        <table border="3" cellspacing="5" cellpadding="5">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+
+            {% for person in contact %}
+            <tr>
+                <td>{{person.name}}</td>
+                <td>{{person.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% if nums|length > 0 %}
+        {% for num in nums %}
+        {% if num > 20 %}
+        <h2>{{num}}</h2>
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        <h2>No Data Found</h2>
+        {% endif %} {% endcomment %} -->
+    </section>
+{% endblock %}

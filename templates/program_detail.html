@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block program %}
+<head>
+    <style>
+        .box{
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 3px 6px;
+            border-radius: 30px;
+            background: #f2f2f2;
+        }
+        .box img{
+            height: 320px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <style media="screen and (max-width:1000px)">
+        .box img{
+            height: 160px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+    <div class="box">
+        <h2 class="head_2 center">{% if request.path == "/program/1" %} Navrang Exhibition {% endif %}</h2>
+        <h2 class="head_2 center">{% if request.path == "/program/2" %} Navrang Dance Off {% endif %}</h2>
+        <h2 class="head_2 center">{% if request.path == "/program/3" %} Upcoming {% endif %}</h2>
+
+        {% if request.path == "/program/1"%}<img src="../static/1.jpg" alt="First Program">{% endif %}
+        {% if request.path == "/program/2"%}<img src="../static/2.jpg" alt="Second Program">{% endif %}
+        {% if request.path == "/program/3"%}<img src="../static/3.jpg" alt="Third Program">{% endif %}
+        <br><br>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque fuga quibusdam aut quaerat aliquam facilis perspiciatis excepturi, sit qui doloribus optio earum dolorum! Corrupti nam amet deleniti beatae ea nesciunt, at iure maxime quasi molestiae sunt id a excepturi pariatur neque nihil fugiat magni eligendi placeat unde quibusdam. Soluta asperiores, quod labore cupiditate minima beatae accusamus velit dolor, quisquam ullam illum sit? Ex accusantium laborum tenetur iste incidunt quibusdam perferendis id qui sunt quos deserunt architecto autem consequatur, eius deleniti a hic asperiores fuga laudantium? Inventore saepe maiores ducimus nemo esse quia error deleniti veritatis natus corrupti fugiat, culpa numquam, excepturi iure non laborum obcaecati nulla quam harum quod voluptatibus adipisci praesentium unde sapiente! Inventore nihil sint itaque doloribus ratione hic provident! Cum rerum quis porro saepe nemo, officiis perferendis id tempora nam iusto aliquid quo cumque dicta possimus, minima eos ducimus necessitatibus unde est sit! Eos consectetur cum quia quis inventore unde nam eum ratione, quaerat rem veritatis. Veniam exercitationem repellat aspernatur dolor culpa tempore, voluptatibus ipsum expedita commodi cupiditate itaque dicta consequuntur. Dicta nam necessitatibus vel dolor mollitia inventore ratione, aperiam, recusandae repellendus magnam reiciendis laborum architecto modi nulla placeat incidunt iusto voluptas? Praesentium veniam distinctio modi.</p>
+    </div>
+{% endblock %}

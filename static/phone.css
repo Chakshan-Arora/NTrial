@@ -1,0 +1,25 @@
+#navbar{
+    flex-direction: column;
+}
+
+#home{
+    height: 500px;
+}
+#home::before{
+    height: 750px;
+}
+#home p{
+    font-size: 1rem;
+}
+
+#programs{
+    flex-direction: column;
+}
+
+footer{
+    width: 100%;
+}
+
+.head{
+    font-size: 1.7rem;
+}

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../static/style.css">      
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="../static/phone.css">
+</head>
+
+    {% include "header.html" %}
+
+    <section id="home">
+        <h1 class="head">Welcome to Navrang</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus veniam cumque</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Editable</button>
+    </section>
+
+    {% block about %}{% endblock %}
+
+    {% block program %}{% endblock %}
+
+    <section id="program">
+        <h1 class="head center">Our Programs</h1>
+        <div id="programs">
+            <div class="box">
+                <img src="../static/1.jpg" alt="First Program">
+                <ul>
+                    <li class="{% if request.path == "/program/1" %} active {% endif %}"><a class="head_2 center link" href="/program/1"><h2 class="head_2 center">Navrang Exhibition</h2></a></li>
+                </ul>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, accusantium tempora eum nesciunt, perferendis inventore harum dolore suscipit laboriosam vero ut magnam asperiores? Maiores porro, maxime beatae assumenda exercitationem veniam?</p>
+            </div>
+            <div class="box">
+                <img src="../static/2.jpg" alt="Second Program">
+                <ul>
+                    <li class="{% if request.path == "/program/2" %} active {% endif %}"><a class="head_2 center link" href="/program/2"><h2 class="head_2 center">Navrang Dance Off</h2></a></li>
+                </ul>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, accusantium tempora eum nesciunt, perferendis inventore harum dolore suscipit laboriosam vero ut magnam asperiores? Maiores porro, maxime beatae assumenda exercitationem veniam?</p>
+            </div>
+            <div class="box">
+                <img src="../static/3.jpg" alt="Third Program">
+                <ul>
+                    <li class="{% if request.path == "/program/3" %} active {% endif %}"><a class="head_2 center link" href="/program/3"><h2 class="head_2 center">Upcoming</h2></a></li>
+                </ul>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, accusantium tempora eum nesciunt, perferendis inventore harum dolore suscipit laboriosam vero ut magnam asperiores? Maiores porro, maxime beatae assumenda exercitationem veniam?</p>
+            </div>
+        </div>
+    </section>
+
+
+    {% block home %}{% endblock %}
+
+    {% include "footer.html" %}
