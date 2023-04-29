@@ -11,5 +11,6 @@
             "src":"/(.*)",
             "dest":"navrang/wsgi.py"
         }
-    ]
+    ],
+    "rewrites": [{"source":"/(.*)", "destination":"/"}]
 }
